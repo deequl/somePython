@@ -24,3 +24,6 @@ print(inactive_users)
 
 def remove_negatives(numberList):
     return list(filter(lambda n: n>=0, numberList))
+
+def triple_and_filter(lst):
+    return list(filter(lambda x: x % 4 == 0, map(lambda x: x*3, lst)))
